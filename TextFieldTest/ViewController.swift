@@ -11,8 +11,21 @@ import UIKit
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
+        
+        self.view.backgroundColor = BLACK_COLOR
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        let textField = BaseTextField()
+        textField.frame = (CGRectMake(40, 40, self.view.frame.size.width-80, 60))
+        textField.placeholder = "Username"
+        //textField.backgroundColor = UIColor.lightGrayColor()
+        self.view.addSubview(textField)
+        
+        let textField2 = BaseTextField()
+        textField2.frame = (CGRectMake(40, 100, self.view.frame.size.width-80, 60))
+        textField2.placeholder = "Password"
+        self.view.addSubview(textField2)
     }
 
     override func didReceiveMemoryWarning() {

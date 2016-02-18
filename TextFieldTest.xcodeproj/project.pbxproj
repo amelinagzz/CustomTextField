@@ -14,6 +14,13 @@
 		3F29F3D91C7617BF006CFE0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F29F3D71C7617BF006CFE0A /* LaunchScreen.storyboard */; };
 		3F29F3E41C7617C0006CFE0A /* TextFieldTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29F3E31C7617C0006CFE0A /* TextFieldTestTests.swift */; };
 		3F29F3EF1C7617C0006CFE0A /* TextFieldTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29F3EE1C7617C0006CFE0A /* TextFieldTestUITests.swift */; };
+		3F29F3FD1C7617D2006CFE0A /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29F3FC1C7617D2006CFE0A /* HoshiTextField.swift */; };
+		3F29F3FF1C7617DA006CFE0A /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29F3FE1C7617DA006CFE0A /* IsaoTextField.swift */; };
+		3F29F4011C761A29006CFE0A /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29F4001C761A29006CFE0A /* TextFieldsEffects.swift */; };
+		3F29F4061C762C85006CFE0A /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29F4051C762C85006CFE0A /* BaseTextField.swift */; };
+		3F29F4081C7633F4006CFE0A /* Quicksand-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3F29F4071C7633F4006CFE0A /* Quicksand-Light.otf */; };
+		3F29F40A1C7634A7006CFE0A /* Quicksand-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3F29F4091C7634A7006CFE0A /* Quicksand-Regular.otf */; };
+		3F29F40C1C7636DF006CFE0A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29F40B1C7636DF006CFE0A /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,14 @@
 		3F29F3EA1C7617C0006CFE0A /* TextFieldTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextFieldTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F29F3EE1C7617C0006CFE0A /* TextFieldTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTestUITests.swift; sourceTree = "<group>"; };
 		3F29F3F01C7617C0006CFE0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F29F3FC1C7617D2006CFE0A /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
+		3F29F3FE1C7617DA006CFE0A /* IsaoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsaoTextField.swift; sourceTree = "<group>"; };
+		3F29F4001C761A29006CFE0A /* TextFieldsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsEffects.swift; sourceTree = "<group>"; };
+		3F29F4021C761A30006CFE0A /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
+		3F29F4051C762C85006CFE0A /* BaseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseTextField.swift; path = ../BaseTextField.swift; sourceTree = "<group>"; };
+		3F29F4071C7633F4006CFE0A /* Quicksand-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.otf"; sourceTree = "<group>"; };
+		3F29F4091C7634A7006CFE0A /* Quicksand-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.otf"; sourceTree = "<group>"; };
+		3F29F40B1C7636DF006CFE0A /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +112,20 @@
 		3F29F3CD1C7617BF006CFE0A /* TextFieldTest */ = {
 			isa = PBXGroup;
 			children = (
+				3F29F4071C7633F4006CFE0A /* Quicksand-Light.otf */,
+				3F29F4091C7634A7006CFE0A /* Quicksand-Regular.otf */,
+				3F29F4051C762C85006CFE0A /* BaseTextField.swift */,
+				3F29F4021C761A30006CFE0A /* TextFieldEffects.h */,
+				3F29F3FC1C7617D2006CFE0A /* HoshiTextField.swift */,
+				3F29F4001C761A29006CFE0A /* TextFieldsEffects.swift */,
+				3F29F3FE1C7617DA006CFE0A /* IsaoTextField.swift */,
 				3F29F3CE1C7617BF006CFE0A /* AppDelegate.swift */,
 				3F29F3D01C7617BF006CFE0A /* ViewController.swift */,
 				3F29F3D21C7617BF006CFE0A /* Main.storyboard */,
 				3F29F3D51C7617BF006CFE0A /* Assets.xcassets */,
 				3F29F3D71C7617BF006CFE0A /* LaunchScreen.storyboard */,
 				3F29F3DA1C7617BF006CFE0A /* Info.plist */,
+				3F29F40B1C7636DF006CFE0A /* Colors.swift */,
 			);
 			path = TextFieldTest;
 			sourceTree = "<group>";
@@ -234,7 +257,9 @@
 			files = (
 				3F29F3D91C7617BF006CFE0A /* LaunchScreen.storyboard in Resources */,
 				3F29F3D61C7617BF006CFE0A /* Assets.xcassets in Resources */,
+				3F29F4081C7633F4006CFE0A /* Quicksand-Light.otf in Resources */,
 				3F29F3D41C7617BF006CFE0A /* Main.storyboard in Resources */,
+				3F29F40A1C7634A7006CFE0A /* Quicksand-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +284,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F29F4061C762C85006CFE0A /* BaseTextField.swift in Sources */,
+				3F29F3FD1C7617D2006CFE0A /* HoshiTextField.swift in Sources */,
 				3F29F3D11C7617BF006CFE0A /* ViewController.swift in Sources */,
+				3F29F40C1C7636DF006CFE0A /* Colors.swift in Sources */,
 				3F29F3CF1C7617BF006CFE0A /* AppDelegate.swift in Sources */,
+				3F29F3FF1C7617DA006CFE0A /* IsaoTextField.swift in Sources */,
+				3F29F4011C761A29006CFE0A /* TextFieldsEffects.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
