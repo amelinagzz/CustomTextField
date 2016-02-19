@@ -6,13 +6,18 @@
 //  Copyright © 2016 Adriana Gonzalez. All rights reserved.
 //
 
+
+// Still in progress
+// Height should always be 60px (it shouldn't)
+// Having trouble adjusting top padding (overlap by 12px to avoid too much separation between textfields)
+
 import UIKit
 
 class BaseTextField: UITextField {
     
-    private var line : UIView!
+    private var lineView : CALayer!
     private var messageLbl : UILabel!
-   
+    
     
     override func textRectForBounds(bounds: CGRect) -> CGRect {
         return CGRectInset(bounds, 0, -8)
@@ -24,20 +29,21 @@ class BaseTextField: UITextField {
     
     override func editingRectForBounds(bounds: CGRect) -> CGRect {
         return CGRectInset(bounds, 0, -8)
-
+        
     }
-
+    
     override func drawRect(rect: CGRect) {
-
-
-        line = UIView(frame: CGRectMake(0,self.frame.size.height-15, self.frame.size.width,1))
-        line.backgroundColor = GREEN_COLOR
-        self.addSubview(line)
-
-        self.font = UIFont(name: "Quicksand-Regular", size: 20)
+        
+        
+        lineView = CALayer()
+        lineView.frame = CGRectMake(0,self.frame.size.height-15, self.frame.size.width,1)
+        lineView.backgroundColor = LIGHT_WHITE.CGColor
+        self.layer.addSublayer(lineView)
+        
+        self.font = UIFont(name: "Quicksand-Regular", size: 18)
         self.tintColor = GREEN_COLOR
         self.textColor = UIColor.whiteColor()
-
+        
         if let placeholder = self.placeholder {
             let ph = NSAttributedString(string: placeholder, attributes: [NSForegroundColorAttributeName : UIColor(white: 1, alpha: 0.6)])
             self.attributedPlaceholder = ph
@@ -48,7 +54,7 @@ class BaseTextField: UITextField {
         messageLbl.textColor = RED_COLOR
         messageLbl.hidden = true
         self.addSubview(messageLbl)
-       
+        
     }
     
     
@@ -61,9 +67,9 @@ class BaseTextField: UITextField {
             return false
         }
         
-        line.backgroundColor = GREEN_COLOR
+        lineView.backgroundColor = LIGHT_WHITE.CGColor
         messageLbl.hidden = true
-
+        
         return true
         
     }
@@ -74,8 +80,8 @@ class BaseTextField: UITextField {
             
             
         } else {
-            line.backgroundColor = RED_COLOR
-
+            lineView.backgroundColor = RED_COLOR.CGColor
+            
         }
         
         return true
