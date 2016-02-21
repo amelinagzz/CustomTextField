@@ -74,8 +74,7 @@ class BaseTextField: UITextField {
         
     }
     
-    override func resignFirstResponder() -> Bool {
-        
+    func willValidate() {
         if validate() {
             
             
@@ -83,8 +82,7 @@ class BaseTextField: UITextField {
             lineView.backgroundColor = RED_COLOR.CGColor
             
         }
-        
-        return true
     }
-    
+  
+   
 }
